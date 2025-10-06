@@ -3,6 +3,11 @@ include:
   - remote: "https://raw.githubusercontent.com/miquido/gitlab-templates/1.3.103/git-toolkit.yml"
   - remote: "https://raw.githubusercontent.com/miquido/gitlab-templates/1.3.103/gitlab-toolkit.yml"
 
+validate:
+  extends: .validate-terraform
+  variables:
+    ENVIRONMENTS: examples/complete
+
 bump-tag:
   extends: .bump_minor_tag
 
