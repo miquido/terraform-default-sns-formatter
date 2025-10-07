@@ -29,7 +29,7 @@ resource "aws_lambda_function" "notifications_formatter" {
 
   environment {
     variables = {
-      FORMATTERS = join(",", coalesce(var.formatters, ["ignore_create_service_linked_role", "cloud_watch_alarm", "iam_changes", "ses_bounces"]))
+      FORMATTERS = join(",", coalesce(var.formatters, ["ignore_create_service_linked_role", "cloud_watch_alarm", "iam_changes", "ses_bounces", "root_sign_in"]))
     }
   }
 

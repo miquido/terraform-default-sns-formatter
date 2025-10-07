@@ -1,5 +1,5 @@
 from core import Formatter
-from formatters import CloudWatchAlarm, IgnoreCreateServiceLinkedRole, IamChanges, SESBounces, IgnoreSESTransientBounces
+from formatters import CloudWatchAlarm, IgnoreCreateServiceLinkedRole, IamChanges, SESBounces, IgnoreSESTransientBounces, SignIn
 
 
 class FormattersFactory(object):
@@ -15,4 +15,6 @@ class FormattersFactory(object):
             return SESBounces()
         if formater == "ses_ignore_transient_bounces":
             return IgnoreSESTransientBounces()
+        if formater == "root_sign_in":
+            return SignIn()
         return Formatter()
