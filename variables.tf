@@ -17,3 +17,21 @@ variable "formatters" {
     description = "List of formatters"
     default     = null
 }
+
+variable "filename" {
+  type = string
+  description = "Custom python code filename for formatter"
+  default = null
+}
+
+variable "source_code_hash" {
+  type = string
+  description = "Custom python code hash for formatter"
+  default = null
+}
+
+variable "handler" {
+  type = string
+  description = "Custom python code handler for formatter"
+  default = null
+}

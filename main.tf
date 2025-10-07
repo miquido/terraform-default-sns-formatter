@@ -20,12 +20,12 @@ data "archive_file" "notifications_formatter" {
 resource "aws_lambda_function" "notifications_formatter" {
   function_name    = local.notifications_formatter_lambda_name
   role             = aws_iam_role.notifications_formatter.arn
-  filename         = local.notifications_formatter_lambda_zip_filename
-  handler          = "main.lambda_handler"
+  filename         = coalesce(var.filename, local.notifications_formatter_lambda_zip_filename)
+  handler          = coalesce(var.handler, "main.lambda_handler")
   runtime          = "python3.13"
   timeout          = 3
   memory_size      = 128
-  source_code_hash = data.archive_file.notifications_formatter.output_base64sha256
+  source_code_hash = coalesce(var.source_code_hash, data.archive_file.notifications_formatter.output_base64sha256)
 
   environment {
     variables = {
