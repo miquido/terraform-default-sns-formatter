@@ -35,3 +35,9 @@ variable "handler" {
   description = "Custom python code handler for formatter"
   default = null
 }
+
+variable "name" {
+  type = string
+  description = "Custom name"
+  default = "default"
+}

@@ -1,12 +1,8 @@
 data "aws_caller_identity" "default" {}
 data "aws_region" "default" {}
 
-resource "aws_sns_topic" "main" {
-  name = "${var.project}-${var.environment}-notifications-formatter"
-}
-
 locals {
-  notifications_formatter_lambda_name         = "${var.project}-${var.environment}-notification-formatter"
+  notifications_formatter_lambda_name         = "${var.project}-${var.environment}-${var.name}-formatter"
   notifications_formatter_lambda_zip_filename = "${path.module}/formatter.zip"
 }
 
