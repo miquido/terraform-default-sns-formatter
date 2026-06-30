@@ -8,7 +8,7 @@ locals {
 
 data "archive_file" "notifications_formatter" {
   type             = "zip"
-  source_dir      = "${path.module}/lambda"
+  source_dir       = "${path.module}/lambda"
   output_path      = local.notifications_formatter_lambda_zip_filename
   output_file_mode = "0755"
 }

@@ -30,8 +30,8 @@ No requirements.
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_archive"></a> [archive](#provider\_archive) | n/a |
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_archive"></a> [archive](#provider\_archive) | 2.8.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.52.0 |
 
 ## Modules
 
@@ -63,7 +63,7 @@ No modules.
 
 | Name | Description |
 | ---- | ----------- |
-| <a name="output_formatter_lambda_arn"></a> [formatter\_lambda\_arn](#output\_formatter\_lambda\_arn) | n/a |
+| <a name="output_formatter_lambda_arn"></a> [formatter\_lambda\_arn](#output\_formatter\_lambda\_arn) | ARN of the SNS formatter Lambda function |
 <!-- END_TF_DOCS -->
 
 ## License

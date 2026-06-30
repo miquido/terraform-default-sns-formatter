@@ -13,31 +13,31 @@ variable "log_retention" {
 }
 
 variable "formatters" {
-    type        = list(string)
-    description = "List of formatters"
-    default     = null
+  type        = list(string)
+  description = "List of formatters"
+  default     = null
 }
 
 variable "filename" {
-  type = string
+  type        = string
   description = "Custom python code filename for formatter"
-  default = null
+  default     = null
 }
 
 variable "source_code_hash" {
-  type = string
+  type        = string
   description = "Custom python code hash for formatter"
-  default = null
+  default     = null
 }
 
 variable "handler" {
-  type = string
+  type        = string
   description = "Custom python code handler for formatter"
-  default = null
+  default     = null
 }
 
 variable "name" {
-  type = string
+  type        = string
   description = "Custom name"
-  default = "default"
+  default     = "default"
 }
