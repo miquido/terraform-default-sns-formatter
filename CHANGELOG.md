@@ -1,3 +1,10 @@
+# [1.1.0](https://gitlab.miquido.com/miquido/terraform/default-sns-formatter/compare/v1.0.0...v1.1.0) (2026-08-18)
+
+
+### Features
+
+* Added more fields to root login default formatter ([13f5bf8](https://gitlab.miquido.com/miquido/terraform/default-sns-formatter/commit/13f5bf851931e330b4c6295060c1350f9497e3ef))
+
 # 1.0.0 (2026-06-30)
 
 
