@@ -1,4 +1,5 @@
 lambda/formatters/__pycache__/*
+lambda/core/__pycache__/*
 .terraform
 *.tfstate
 *.tfstate.backup
